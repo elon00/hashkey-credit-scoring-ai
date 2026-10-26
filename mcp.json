@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "hashkey-credit-scoring-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "HashKey Chain",
+        "PROJECT_TICKER": "HKCREDIT"
+      },
+      "tools": [
+        {
+          "name": "verify_hkcredit_invariants",
+          "description": "Verifies deterministic invariants for HashKey Credit Scoring AI on HashKey Chain."
+        },
+        {
+          "name": "execute_hkcredit_action",
+          "description": "Executes authenticated AI state transition."
+        }
+      ]
+    }
+  }
+}
